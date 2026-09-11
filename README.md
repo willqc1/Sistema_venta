@@ -1,2 +1,2 @@
 # Sistema_venta
-Este sera un sistema e ventas desarrollado en django
+Este sera un sistema de ventas desarrollado en django
