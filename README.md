@@ -33,7 +33,7 @@ Si aparece algo como `127.0.0.1:3306`, significa que MySQL ya está corriendo.
 ### 4) Entrar a MySQL
 
 ```bash
-mysql -h 127.0.0.1 -u django_user -p
+sudo mysql
 ```
 
 ### 5) Crear la base de datos
@@ -61,7 +61,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'tienda',
         'USER': 'tienda_user',
-        'PASSWORD': 'tu_password',
+        'PASSWORD': '123',
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
