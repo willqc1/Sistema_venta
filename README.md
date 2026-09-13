@@ -1,5 +1,5 @@
 # Sistema_venta
-Este sera un sistema de ventas desarrollado en django
+Este sera un sistema de ventas desarrollado en django + tabler
 
 ## Tutorial para iniciar la base de datos MySQL
 
