@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Tabler</title>
+    <!-- CSS de Tabler -->
+    <link rel="stylesheet" href="{% static 'css/tabler.min.css' %}">
+</head>
+<body class="layout-fluid">
+    <div class="page">
+        <!-- Encabezado simple -->
+        <header class="navbar navbar-expand-md navbar-light d-print-none">
+            <div class="container-xl">
+                <h1 class="navbar-brand text-primary">Sistema Venta</h1>
+            </div>
+        </header>
+
+        <!-- Contenido -->
+        <div class="page-wrapper">
+            <div class="page-body">
+                <div class="container-xl">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">¡Bienvenido!</h3>
+                            <p class="text-secondary">Tabler UI se ha configurado correctamente en Django.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS de Tabler -->
+    <script src="{% static 'js/tabler.min.js' %}"></script>
+</body>
+</html>

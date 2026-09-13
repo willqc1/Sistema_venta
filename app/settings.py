@@ -25,7 +25,14 @@ SECRET_KEY = "django-insecure-32m)xut5bg2qh(x(ya!l)@j6h4-q1ih+kwgwbszb4jf^w%__g5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '.githubdev.link',  # Permite las URLs de Codespaces en VS Code Web
+    '.app.github.dev',   # Permite las URLs si abres el puerto en el navegador
+]
+
 
 
 # Application definition
@@ -54,7 +61,7 @@ ROOT_URLCONF = "app.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -119,6 +126,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
 STATIC_URL = "static/"
+
+# Importante: Asegúrate de tener 'import os' al inicio del archivo o usa BASE_DIR
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
 
 
 # Email
